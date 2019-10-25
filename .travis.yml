@@ -1,0 +1,36 @@
+language: cpp
+
+matrix:
+  include:
+
+  # ~~ linux gcc ~~ ===========================================
+  - os: linux
+    addons:
+      apt:
+        sources:
+          - ubuntu-toolchain-r-test
+        packages:
+          - g++-5
+    env:
+      - COMPILER=g++-5
+    script:
+      - make debug && make test
+
+  # ~~ linux clang ~~ =========================================
+  - os: linux
+    addons:
+      apt:
+        sources:
+          - ubuntu-toolchain-r-test
+          - llvm-toolchain-precise-3.6
+        packages:
+          - g++-5
+          - clang-3.6
+    env:
+      - COMPILER=clang++-3.6
+    script:
+      - make debug && make test
+
+before_script:
+  - export CXX=$COMPILER
+  - $CXX -v
