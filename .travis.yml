@@ -14,7 +14,7 @@ matrix:
     env:
       - COMPILER=g++-5
     script:
-      - make debug && make test
+      - make && make test
 
   # ~~ linux clang ~~ =========================================
   - os: linux
@@ -29,7 +29,7 @@ matrix:
     env:
       - COMPILER=clang++-3.6
     script:
-      - make debug && make test
+      - make && make test
 
 before_script:
   - export CXX=$COMPILER
