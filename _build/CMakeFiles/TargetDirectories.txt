@@ -1,3 +1,0 @@
-/home/vlanore/git/logging_utils/_build/CMakeFiles/rebuild_cache.dir
-/home/vlanore/git/logging_utils/_build/CMakeFiles/all_tests.dir
-/home/vlanore/git/logging_utils/_build/CMakeFiles/edit_cache.dir
