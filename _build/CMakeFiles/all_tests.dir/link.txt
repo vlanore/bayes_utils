@@ -1,0 +1,1 @@
+/usr/bin/clang++  -O2 -g --std=c++14 -Wall -Wextra   -rdynamic CMakeFiles/all_tests.dir/src/test.cpp.o  -o all_tests 
